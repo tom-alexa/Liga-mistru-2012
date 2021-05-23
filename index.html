@@ -14,9 +14,10 @@
 
             <!-- menu -->
             <ul class="menu">
-                <li class="nav-item"><a href="#">Detaily</a></li>
-                <li class="nav-item"><a href="#">Cesta</a></li>
-                <li class="nav-item item-zapas"><a href="#">Zápas <span class="nav-symbol">▼</span></a>
+                <li class="nav-item"><a href="#detaily">Detaily</a></li>
+                <li class="nav-item"><a href="#statistiky">Statistiky</a></li>
+                <li class="nav-item"><a href="#cesta">Cesta do finále</a></li>
+                <li class="nav-item item-zapas"><a href="#zapas">Zápas <span class="nav-symbol">▼</span></a>
                     <ul class="drop-down-menu">
                         <!-- 1. polovina -->
                         <li class="down-nav-head"><a href="#">1. polovina</a></li>
@@ -46,9 +47,137 @@
         </nav>
     </header>
 
-    <body>
+    <div class="main">
         
-    </body>
+        <div class="main-item m-i-flex">
+    
+            <!-- Detaily -->
+            <div id="detaily">
+                <h1>Detaily</h1>
+                <div class="det-content">
+                    <div class="det-item">
+                        <div class="det-head">Datum</div>
+                        <div class="det-info">19. května 2012</div>
+                    </div>
+                    <div class="det-item">
+                        <div class="det-head">Místo</div>
+                        <div class="det-info"><a href="https://en.wikipedia.org/wiki/Allianz_Arena">Allianz Arena, Mnichov</a></div>
+                    </div>
+                    <div class="det-item">
+                        <div class="det-head">Hráč zápasu</div>
+                        <div class="det-info"><a href="https://en.wikipedia.org/wiki/Didier_Drogba">Didier Drogba</a></div>
+                    </div>
+                    <div class="det-item">
+                        <div class="det-head">Hráč zápasu podle fanoušků</div>
+                        <div class="det-info"><a href="https://en.wikipedia.org/wiki/Petr_%C4%8Cech">Petr Čech</a></div>
+                    </div>
+                    <div class="det-item">
+                        <div class="det-head">Rozhodčí</div>
+                        <div class="det-info"><a href="https://en.wikipedia.org/wiki/Pedro_Proen%C3%A7a">Pedro Proença</a></div>
+                    </div>
+                    <div class="det-item">
+                        <div class="det-head">Počet diváků na stadionu</div>
+                        <div class="det-info">62 500</div>
+                    </div>
+                    <div class="det-item">
+                        <div class="det-head">Počasí</div>
+                        <div class="det-info">Částečně oblačno <br> 20°C, 38% vlhkost </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Statistiky -->
+            <div id="statistiky">
+                <h1>Statistiky</h1>
+
+                <table class="st-tab">
+                    <tr>
+                        <th>Bayern Mnichov</th>
+                        <th></th>
+                        <th>Chelsea F.C.</th>
+                    </tr>
+                    <tr>
+                        <td class="st-tab-bay">64%</td>
+                        <td class="st-tab-name">Držení míče</td>
+                        <td class="st-tab-chel">36%</td>
+                    </tr>
+                    <tr>
+                        <td class="st-tab-bay">35</td>
+                        <td class="st-tab-name">Střely celkem</td>
+                        <td class="st-tab-chel">9</td>
+                    </tr>
+                    <tr>
+                        <td class="st-tab-bay">7</td>
+                        <td class="st-tab-name">Střely na branku</td>
+                        <td class="st-tab-chel">3</td>
+                    </tr>
+                    <tr>
+                        <td class="st-tab-bay">17</td>
+                        <td class="st-tab-name">Střely mimo branku</td>
+                        <td class="st-tab-chel">3</td>
+                    </tr>
+                    <tr>
+                        <td class="st-tab-bay">11</td>
+                        <td class="st-tab-name">Zblokované střely</td>
+                        <td class="st-tab-chel">3</td>
+                    </tr>
+                    <tr>
+                        <td class="st-tab-bay">20</td>
+                        <td class="st-tab-name">Rohové kopy</td>
+                        <td class="st-tab-chel">1</td>
+                    </tr>
+                    <tr>
+                        <td class="st-tab-bay">1</td>
+                        <td class="st-tab-name">Ofsajdy</td>
+                        <td class="st-tab-chel">2</td>
+                    </tr>
+                    <tr>
+                        <td class="st-tab-bay">2</td>
+                        <td class="st-tab-name">Zásahy brankářů</td>
+                        <td class="st-tab-chel">6</td>
+                    </tr>
+                    <tr>
+                        <td class="st-tab-bay">14</td>
+                        <td class="st-tab-name">Fauly</td>
+                        <td class="st-tab-chel">26</td>
+                    </tr>
+                    <tr>
+                        <td class="st-tab-bay">1</td>
+                        <td class="st-tab-name">Žluté karty</td>
+                        <td class="st-tab-chel">4</td>
+                    </tr>
+                    <tr>
+                        <td class="st-tab-bay">724</td>
+                        <td class="st-tab-name">Přihrávky celkem</td>
+                        <td class="st-tab-chel">580</td>
+                    </tr>
+                    <tr>
+                        <td class="st-tab-bay">545</td>
+                        <td class="st-tab-name">Úspěšné přihrávky</td>
+                        <td class="st-tab-chel">408</td>
+                    </tr>
+                    <tr>
+                        <td class="st-tab-bay">146 586</td>
+                        <td class="st-tab-name">Uběhnutá vzdálenost (metry)</td>
+                        <td class="st-tab-chel">144 739</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+
+        <!-- Cesta do finále -->
+        <div class="main-item" id="cesta">
+            <h1>Cesta do finále</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, dolores excepturi id sed fuga eum adipisci voluptas et porro quod cupiditate qui amet sit reprehenderit doloribus labore ea facere molestiae!</p>
+        </div>
+
+        <!-- Zápas -->
+        <div class="main-item" id="zapas">
+            <h1>Zápas</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, dolores excepturi id sed fuga eum adipisci voluptas et porro quod cupiditate qui amet sit reprehenderit doloribus labore ea facere molestiae!</p>
+        </div>
+
+    </div>
 
     <footer>
 

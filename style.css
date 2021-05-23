@@ -16,7 +16,9 @@ header {
     position: fixed;
     width: 100%;
     height: 8vh;
+    top: 0;
     background-color: #008327;
+    z-index: 10;
 }
 
 .header {
@@ -120,4 +122,106 @@ header {
 
 .down-nav-item a span {
     color: #bbbbbb;
+}
+
+/* main */
+.main {
+    width: 60vw;
+    margin: auto;
+}
+
+.main-item {
+    width: 100%;
+}
+
+
+.main h1 {
+    text-align: center;
+}
+
+/* main > detaily */
+.m-i-flex {
+    display: flex;
+    justify-content: space-around;
+}
+
+#detaily {
+    width: 50%;
+    flex: 1;
+    margin-right: 5em;
+    padding-top: 5em;
+}
+
+.det-content {
+    border: #000 solid .2em;
+}
+
+.det-item {
+    display: flex;
+    font-size: 1.2rem;
+    margin: 1em auto;
+    font-weight: 700;
+    align-items: center;
+    height: auto;
+    padding: .5em auto;
+}
+
+.det-head {
+    flex: 1;
+    width: 100%;
+    margin-left: 4em;
+}
+
+.det-info{
+    margin-left: 1em;
+    flex: 1;
+    color: #9c0000;
+}
+.det-info a {
+    color: #9c0000;
+    border-bottom: #0a008f solid .2em;
+    padding-bottom: .01em;
+    text-decoration: none;
+}
+
+.det-info a:hover,
+.det-info a:focus {
+    color: #000;
+    border-bottom: none;
+}
+
+#statistiky {
+    flex: 1;
+    padding-top: 5em;
+}
+
+.st-tab {
+    width: 100%;
+    border: #000 solid .2em;
+    padding: 1em;
+}
+
+.st-tab tr {
+    height: 2em;
+}
+
+.st-tab-bay {
+    margin-right: 0;
+    text-align: right;
+    padding-right: 2em;
+    color: #9c0000;
+    font-weight: 700;
+}
+
+.st-tab-name {
+    font-weight: 700;
+    color: #000983;
+    text-align: center;
+}
+
+.st-tab-chel {
+    text-align: left;
+    padding-left: 2em;
+    color: #9c0000;
+    font-weight: 700;
 }
