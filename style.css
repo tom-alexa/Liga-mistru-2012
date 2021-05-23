@@ -30,7 +30,7 @@ header {
     justify-content: space-between;
 }
 
-/* header > logo */
+/* header >> logo */
 .logo {
     align-self: center;
     font-weight: 700;
@@ -45,14 +45,14 @@ header {
 }
 
 .logo a:hover {
-    color: #00ffff;
+    color: #68ffff;
 }
 
 .logo a span {
     color: #cccccc;
 }
 
-/* header > menu */
+/* header >> menu */
 .menu {
     display: flex;
     justify-content: flex-end;
@@ -79,6 +79,14 @@ header {
     color: #e6e6e6;
 }
 
+#ddm-cesta {
+    right: 16em;
+}
+
+#ddm-zapas {
+    right: 2em;
+}
+
 .drop-down-menu {
     position: absolute;
     visibility: hidden;
@@ -89,14 +97,13 @@ header {
     padding: auto 2em;
     padding-bottom: 1.5em;
     margin: 1em;
-    right: 2em;
     transform: translateY(-2em);
     background-color: #00570e;
     list-style: none;
     transition: all 0.2s ease 0s, visibility 0s ease;
 }
 
-.item-zapas:hover .drop-down-menu {
+.nav-drop:hover .drop-down-menu {
     visibility: visible;
     transform: translateY(0%);
     opacity: 1;
@@ -139,7 +146,7 @@ header {
     text-align: center;
 }
 
-/* main > detaily */
+/* main >> detaily */
 .m-i-flex {
     display: flex;
     justify-content: space-around;
@@ -179,9 +186,10 @@ header {
 }
 .det-info a {
     color: #9c0000;
-    border-bottom: #0a008f solid .2em;
+    border-bottom: #0a008f solid .15em;
     padding-bottom: .01em;
     text-decoration: none;
+    transition: all ease .2s;
 }
 
 .det-info a:hover,
@@ -190,6 +198,7 @@ header {
     border-bottom: none;
 }
 
+/* main >> statistiky */
 #statistiky {
     flex: 1;
     padding-top: 5em;
@@ -225,3 +234,121 @@ header {
     color: #9c0000;
     font-weight: 700;
 }
+
+/* main >> cesta do finále */
+#cesta {
+    padding-top: 5em;
+}
+
+#kvalifikace, #skupina, #vyrazovaci {
+    padding-top: 5em;
+}
+
+.ces-content {
+    width: 100%;
+}
+
+.ces-content h2 {
+    text-align: center;
+    color: #9c0000;
+}
+
+.ces-teams-head {
+    display: flex;
+    width: 100%;
+}
+
+.ces-team-head {
+    flex: 1;
+    text-align: center;
+}
+
+.ces-team-head a {
+    padding: .3em 1em;
+    text-decoration: none;
+    color: #5c0101;
+    transition: all ease .3s;
+}
+
+.ces-team-head a:hover {
+    color: #181818;
+    background-color: #a7a7a7;
+    border-bottom: #0a008f solid .2em;
+}
+
+.ces-teams-con {
+    display: flex;
+    width: 100%;
+}
+
+.ces-team-con {
+    flex: 2;
+}
+
+.ces-popis {
+    flex: 1;
+}
+
+.ces-popis-con {
+    text-align: center;
+    font-weight: 700;
+    align-self: center;
+    font-size: 1.2rem;
+    margin: 1.5em auto;
+}
+
+.ces-zapasy {
+    width: 100%;
+}
+
+.ces-zapas {
+    flex: 1;
+    width: 100%;
+    display: flex;
+    margin: 2em auto;
+}
+
+.ces-souper {
+    flex: 1;
+    text-align: right;
+}
+
+.ces-souper a {
+    text-decoration: none;
+    font-weight: 700;
+    padding: .5em .8em;
+    color: #000;
+    border-bottom: #0a008f solid .2em;
+    transition: all ease .2s;
+}
+
+.ces-souper a:hover {
+    background-color: #a7a7a7;
+}
+
+.ces-mul-zapas {
+    width: 100%;
+    flex: 2;
+    display: flex;
+    flex-direction: row;
+}
+
+.ces-zapas-kon {
+    width: 100%;
+    flex: 1;
+    text-align: center;
+}
+
+.ces-zapas-kon a {
+    text-decoration: none;
+    padding: .5em .8em;
+    color: #000;
+    border-top: #0a008f solid .02em;
+    border-bottom: #0a008f solid .02em;
+    transition: all ease .2s;
+}
+
+.ces-zapas-kon a:hover {
+    background-color: #a7a7a7;
+}
+

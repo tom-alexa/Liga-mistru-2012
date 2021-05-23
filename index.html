@@ -4,21 +4,28 @@
     <meta charset="UTF-8">
     <link rel="stylesheet" href="style.css">
     <title>Finále Ligy mistrů 2012</title>
+    <base target="_blank">
 </head>
 <body>
     <header>
         <nav class="header">
 
             <!-- logo -->
-            <div class="logo"><a href="">Bayern Mnichov <span> vs. </span> Chelsea F.C.</a></div>
+            <div class="logo"><a href="/" target="_self">Bayern Mnichov <span> vs. </span> Chelsea</a></div>
 
             <!-- menu -->
             <ul class="menu">
-                <li class="nav-item"><a href="#detaily">Detaily</a></li>
-                <li class="nav-item"><a href="#statistiky">Statistiky</a></li>
-                <li class="nav-item"><a href="#cesta">Cesta do finále</a></li>
-                <li class="nav-item item-zapas"><a href="#zapas">Zápas <span class="nav-symbol">▼</span></a>
-                    <ul class="drop-down-menu">
+                <li class="nav-item"><a href="#detaily" target="_self">Detaily</a></li>
+                <li class="nav-item"><a href="#statistiky" target="_self">Statistiky</a></li>
+                <li class="nav-item nav-drop"><a href="#cesta" target="_self">Cesta do finále <span class="nav-symbol">▼</span></a>
+                    <ul class="drop-down-menu" id="ddm-cesta">
+                        <li class="down-nav-head"><a href="#kvalifikace" target="_self">Kvalifikace</a></li>
+                        <li class="down-nav-head"><a href="#skupina" target="_self">Skupinová fáze</a></li>
+                        <li class="down-nav-head"><a href="#vyrazovaci" target="_self">Vyřazovací část</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item nav-drop"><a href="#zapas" target="_self">Zápas <span class="nav-symbol">▼</span></a>
+                    <ul class="drop-down-menu" id="ddm-zapas">
                         <!-- 1. polovina -->
                         <li class="down-nav-head"><a href="#">1. polovina</a></li>
                         <li class="down-nav-item"><a href="#"><span class="nav-min">2. |</span> Žlutá karta (Schweinsteiger)</a></li>
@@ -94,7 +101,7 @@
                     <tr>
                         <th>Bayern Mnichov</th>
                         <th></th>
-                        <th>Chelsea F.C.</th>
+                        <th>Chelsea</th>
                     </tr>
                     <tr>
                         <td class="st-tab-bay">64%</td>
@@ -168,7 +175,206 @@
         <!-- Cesta do finále -->
         <div class="main-item" id="cesta">
             <h1>Cesta do finále</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, dolores excepturi id sed fuga eum adipisci voluptas et porro quod cupiditate qui amet sit reprehenderit doloribus labore ea facere molestiae!</p>
+            <div class="ces-content">
+
+                <!-- Kvalifikace -->
+                <div id="kvalifikace">
+                    <h2>Kvalifikace</h2>
+                    <div class="ces-teams-head">
+                        <div class="ces-team-head">
+                            <h3><a href="https://en.wikipedia.org/wiki/FC_Bayern_Munich">Bayern Mnichov</a></h3>
+                        </div>
+                        <div class="ces-team-head"></div>
+                        <div class="ces-team-head">
+                            <h3><a href="https://en.wikipedia.org/wiki/Chelsea_F.C.">Chelsea</a></h3>
+                        </div>
+                    </div>
+
+                    <div class="ces-teams-con">
+                        <div class="ces-team-con">
+                            <div class="ces-zapasy">
+                                <div class="ces-zapas">
+                                    <div class="ces-souper"><a href="https://en.wikipedia.org/wiki/FC_Z%C3%BCrich">Zürich</a></div>
+                                    <div class="ces-mul-zapas">
+                                        <div class="ces-zapas-kon"><a href="https://www.livesport.cz/zapas/M3NEyUd4/#prehled-zapasu/prehled-zapasu">3:0</a></div>
+                                        <div class="ces-zapas-kon"><a href="https://www.livesport.cz/zapas/ngHGOjDb/#prehled-zapasu/prehled-zapasu">2:0 (H)</a></div>
+                                        <div class="ces-zapas-kon"><a href="https://www.livesport.cz/zapas/M3NEyUd4/#prehled-zapasu/prehled-zapasu">1:0 (A)</a></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="ces-popis">
+                            <div class="ces-popis-con">Play-off</div>
+                        </div>
+                        <div class="ces-team-con">
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- Skupinová fáze -->
+                <div id="skupina">
+                    <h2>Skupinová fáze</h2>
+                    <div class="ces-teams-head">
+                        <div class="ces-team-head">
+                            <h3><a href="https://en.wikipedia.org/wiki/FC_Bayern_Munich">Bayern Mnichov</a></h3>
+                        </div>
+                        <div class="ces-team-head"></div>
+                        <div class="ces-team-head">
+                            <h3><a href="https://en.wikipedia.org/wiki/Chelsea_F.C.">Chelsea</a></h3>
+                        </div>
+                    </div>
+
+                    <div class="ces-teams-con">
+                        <div class="ces-team-con">
+                            <div class="ces-zapasy">
+                                <div class="ces-zapas">
+                                    <div class="ces-souper"><a href="https://en.wikipedia.org/wiki/Villarreal_CF">Villarreal</a></div>
+                                    <div class="ces-zapas-kon"><a href="https://www.livesport.cz/zapas/KhI128kF/#prehled-zapasu/prehled-zapasu">2:0 (A)</a></div>
+                                </div>
+                                <div class="ces-zapas">
+                                    <div class="ces-souper"><a href="https://en.wikipedia.org/wiki/Manchester_City_F.C.">Manchester City</a></div>
+                                    <div class="ces-zapas-kon"><a href="https://www.livesport.cz/zapas/SEDbtRSe/#prehled-zapasu/prehled-zapasu">2:0 (H)</a></div>
+                                </div>
+                                <div class="ces-zapas">
+                                    <div class="ces-souper"><a href="https://en.wikipedia.org/wiki/S.S.C._Napoli">Napoli</a></div>
+                                    <div class="ces-zapas-kon"><a href="https://www.livesport.cz/zapas/CSEg4UK2/#prehled-zapasu/prehled-zapasu">1:1 (A)</a></div>
+                                </div>
+                                <div class="ces-zapas">
+                                    <div class="ces-souper"><a href="https://en.wikipedia.org/wiki/S.S.C._Napoli">Napoli</a></div>
+                                    <div class="ces-zapas-kon"><a href="https://www.livesport.cz/zapas/G8LleQsk/#prehled-zapasu/prehled-zapasu">3:2 (H)</a></div>
+                                </div>
+                                <div class="ces-zapas">
+                                    <div class="ces-souper"><a href="https://en.wikipedia.org/wiki/Villarreal_CF">Villarreal</a></div>
+                                    <div class="ces-zapas-kon"><a href="https://www.livesport.cz/zapas/fm0irmbq/#prehled-zapasu/prehled-zapasu">3:1 (H)</a></div>
+                                </div>
+                                <div class="ces-zapas">
+                                    <div class="ces-souper"><a href="https://en.wikipedia.org/wiki/Manchester_City_F.C.">Manchester City</a></div>
+                                    <div class="ces-zapas-kon"><a href="https://www.livesport.cz/zapas/GKBA0nKR/#prehled-zapasu/prehled-zapasu">2:0 (A)</a></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="ces-popis">
+                            <div class="ces-popis-con">1. kolo</div>
+                            <div class="ces-popis-con">2. kolo</div>
+                            <div class="ces-popis-con">3. kolo</div>
+                            <div class="ces-popis-con">4. kolo</div>
+                            <div class="ces-popis-con">5. kolo</div>
+                            <div class="ces-popis-con">6. kolo</div>
+                        </div>
+
+                        <div class="ces-team-con">
+                            <div class="ces-zapasy">
+                                <div class="ces-zapas">
+                                    <div class="ces-souper"><a href="https://en.wikipedia.org/wiki/Bayer_04_Leverkusen">Bayer Leverkusen</a></div>
+                                    <div class="ces-zapas-kon"><a href="https://www.livesport.cz/zapas/WCHMGJRM/#prehled-zapasu/prehled-zapasu">2:0 (H)</a></div>
+                                </div>
+                                <div class="ces-zapas">
+                                    <div class="ces-souper"><a href="https://en.wikipedia.org/wiki/Valencia_CF">Valencia</a></div>
+                                    <div class="ces-zapas-kon"><a href="https://www.livesport.cz/zapas/n99mZ0si/#prehled-zapasu/prehled-zapasu">1:1 (A)</a></div>
+                                </div>
+                                <div class="ces-zapas">
+                                    <div class="ces-souper"><a href="https://en.wikipedia.org/wiki/K.R.C._Genk">Genk</a></div>
+                                    <div class="ces-zapas-kon"><a href="https://www.livesport.cz/zapas/QZxdVItG/#prehled-zapasu/prehled-zapasu">5:0 (H)</a></div>
+                                </div>
+                                <div class="ces-zapas">
+                                    <div class="ces-souper"><a href="https://en.wikipedia.org/wiki/K.R.C._Genk">Genk</a></div>
+                                    <div class="ces-zapas-kon"><a href="https://www.livesport.cz/zapas/GpggBckp/#prehled-zapasu/prehled-zapasu">1:1 (A)</a></div>
+                                </div>
+                                <div class="ces-zapas">
+                                    <div class="ces-souper"><a href="https://en.wikipedia.org/wiki/Bayer_04_Leverkusen">Bayer Leverkusen</a></div>
+                                    <div class="ces-zapas-kon"><a href="https://www.livesport.cz/zapas/hMvlXvC3/#prehled-zapasu/prehled-zapasu">1:2 (A)</a></div>
+                                </div>
+                                <div class="ces-zapas">
+                                    <div class="ces-souper"><a href="https://en.wikipedia.org/wiki/Valencia_CF">Valencia</a></div>
+                                    <div class="ces-zapas-kon"><a href="https://www.livesport.cz/zapas/KUk6IucA/#prehled-zapasu/prehled-zapasu">3:0 (H)</a></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Vyřazovací část -->
+                <div id="vyrazovaci">
+                    <h2>Vyřazovací část</h2>
+                    <div class="ces-teams-head">
+                        <div class="ces-team-head">
+                            <h3><a href="https://en.wikipedia.org/wiki/FC_Bayern_Munich">Bayern Mnichov</a></h3>
+                        </div>
+                        <div class="ces-team-head"></div>
+                        <div class="ces-team-head">
+                            <h3><a href="https://en.wikipedia.org/wiki/Chelsea_F.C.">Chelsea</a></h3>
+                        </div>
+                    </div>
+
+                    <div class="ces-teams-con">
+                        <div class="ces-team-con">
+                            <div class="ces-zapasy">
+                                <div class="ces-zapas">
+                                    <div class="ces-souper"><a href="https://en.wikipedia.org/wiki/FC_Basel">Basilej</a></div>
+                                    <div class="ces-mul-zapas">
+                                        <div class="ces-zapas-kon"><a href="https://www.livesport.cz/zapas/WSBiO90R/#prehled-zapasu/prehled-zapasu">7:1</a></div>
+                                        <div class="ces-zapas-kon"><a href="https://www.livesport.cz/zapas/A9TZL1Dq/#prehled-zapasu/prehled-zapasu">1:0 (A)</a></div>
+                                        <div class="ces-zapas-kon"><a href="https://www.livesport.cz/zapas/WSBiO90R/#prehled-zapasu/prehled-zapasu">7:0 (H)</a></div>
+                                    </div>
+                                </div>
+                                <div class="ces-zapas">
+                                    <div class="ces-souper"><a href="https://en.wikipedia.org/wiki/Olympique_de_Marseille">Marseille</a></div>
+                                    <div class="ces-mul-zapas">
+                                        <div class="ces-zapas-kon"><a href="https://www.livesport.cz/zapas/WjyQ3Krk/#prehled-zapasu/prehled-zapasu">4:0</a></div>
+                                        <div class="ces-zapas-kon"><a href="https://www.livesport.cz/zapas/vgdoB2jF/#prehled-zapasu/prehled-zapasu">0:2 (A)</a></div>
+                                        <div class="ces-zapas-kon"><a href="https://www.livesport.cz/zapas/WjyQ3Krk/#prehled-zapasu/prehled-zapasu">2:0 (H)</a></div>
+                                    </div>
+                                </div>
+                                <div class="ces-zapas">
+                                    <div class="ces-souper"><a href="https://en.wikipedia.org/wiki/Real_Madrid_CF">Real Madrid</a></div>
+                                    <div class="ces-mul-zapas">
+                                        <div class="ces-zapas-kon"><a href="https://www.livesport.cz/zapas/OQHxah8C/#prehled-zapasu/prehled-zapasu">4:3</a></div>
+                                        <div class="ces-zapas-kon"><a href="https://www.livesport.cz/zapas/CjEYaYh6/#prehled-zapasu/prehled-zapasu">2:1 (H)</a></div>
+                                        <div class="ces-zapas-kon"><a href="https://www.livesport.cz/zapas/OQHxah8C/#prehled-zapasu/prehled-zapasu">2:2 (A)</a></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="ces-popis">
+                            <div class="ces-popis-con">Osmifinále</div>
+                            <div class="ces-popis-con">Čtvrtfinále</div>
+                            <div class="ces-popis-con">Semifinále</div>
+                        </div>
+                        <div class="ces-team-con">
+                            <div class="ces-zapasy">
+                                <div class="ces-zapas">
+                                    <div class="ces-souper"><a href="https://en.wikipedia.org/wiki/S.S.C._Napoli">Napoli</a></div>
+                                    <div class="ces-mul-zapas">
+                                        <div class="ces-zapas-kon"><a href="https://www.livesport.cz/zapas/ADNrQVVE/#prehled-zapasu/prehled-zapasu">5:4</a></div>
+                                        <div class="ces-zapas-kon"><a href="https://www.livesport.cz/zapas/CjmgvATA/#prehled-zapasu/prehled-zapasu">3:1 (A)</a></div>
+                                        <div class="ces-zapas-kon"><a href="https://www.livesport.cz/zapas/ADNrQVVE/#prehled-zapasu/prehled-zapasu">4:1 (H)</a></div>
+                                    </div>
+                                </div>
+                                <div class="ces-zapas">
+                                    <div class="ces-souper"><a href="https://en.wikipedia.org/wiki/S.L._Benfica">Benfica</a></div>
+                                    <div class="ces-mul-zapas">
+                                        <div class="ces-zapas-kon"><a href="https://www.livesport.cz/zapas/x46Q1bD1/#prehled-zapasu/prehled-zapasu">3:1</a></div>
+                                        <div class="ces-zapas-kon"><a href="https://www.livesport.cz/zapas/08pf9tLR/#prehled-zapasu/prehled-zapasu">0:1 (A)</a></div>
+                                        <div class="ces-zapas-kon"><a href="https://www.livesport.cz/zapas/x46Q1bD1/#prehled-zapasu/prehled-zapasu">2:1 (H)</a></div>
+                                    </div>
+                                </div>
+                                <div class="ces-zapas">
+                                    <div class="ces-souper"><a href="https://en.wikipedia.org/wiki/FC_Barcelona">Barcelona</a></div>
+                                    <div class="ces-mul-zapas">
+                                        <div class="ces-zapas-kon"><a href="https://www.livesport.cz/zapas/rFUAtpho/#prehled-zapasu/prehled-zapasu">3:2</a></div>
+                                        <div class="ces-zapas-kon"><a href="https://www.livesport.cz/zapas/6k7sbCNI/#prehled-zapasu/prehled-zapasu">1:0 (H)</a></div>
+                                        <div class="ces-zapas-kon"><a href="https://www.livesport.cz/zapas/rFUAtpho/#prehled-zapasu/prehled-zapasu">2:2 (A)</a></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
         </div>
 
         <!-- Zápas -->
