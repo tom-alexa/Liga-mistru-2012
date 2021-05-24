@@ -21,7 +21,7 @@ header {
     z-index: 10;
 }
 
-.header {
+.nav {
     width: 80vw;
     height: 100%;
     margin: auto;
@@ -72,7 +72,7 @@ header {
     text-decoration: none;
     color: #000000;
     padding: 1em 1.4em;
-    transition: all .2s ease;
+    transition: all .3s ease;
 }
 
 .nav-item a:hover {
@@ -100,7 +100,7 @@ header {
     transform: translateY(-2em);
     background-color: #00570e;
     list-style: none;
-    transition: all 0.2s ease 0s, visibility 0s ease;
+    transition: all 0.3s ease 0s, visibility 0s ease;
 }
 
 .nav-drop:hover .drop-down-menu {
@@ -114,13 +114,13 @@ header {
 }
 
 .down-nav-head a {
-    color: #a57100;
+    color: #ca8a00;
 }
 
 .down-nav-item {
     text-align: left;
-    padding: .3em 1em;
     width: 100%;
+    padding: .5em 1em;
 }
 
 .down-nav-item a {
@@ -128,7 +128,11 @@ header {
 }
 
 .down-nav-item a span {
-    color: #bbbbbb;
+    color: #9b9b9b;
+}
+
+.down-nav-item a:hover span {
+    color: #f0f0f0;
 }
 
 /* main */
@@ -141,9 +145,92 @@ header {
     width: 100%;
 }
 
-
 .main h1 {
     text-align: center;
+    font-size: 2.2rem;
+}
+
+/* main > header */
+.main-header {
+    margin-top: 6em;
+    height: 60vh;
+}
+
+.main-header img {
+    position: relative;
+    display: block;
+    margin: auto;
+    transform: translateX(-10vw);
+    width: 80vw;
+    filter: blur(3px);
+    border-radius: .4em;
+    border: #000 solid .2em;
+    opacity: .6;
+    height: 60vh;
+}
+
+.main-header h2 {
+    position: relative;
+    font-size: 3rem;
+    letter-spacing: .1em;
+    font-weight: 900;
+    background-color: rgba(0, 0, 0, 0.822);
+    padding: .5em 1em;
+    text-align: center;
+}
+
+.head-nadpis {
+    top: -10em;
+}
+
+.head-nadpis a {
+    color: #c9c9c9;
+    text-decoration: none;
+    padding: .5em 2em;
+    transition: all ease .3s;
+}
+
+.head-nadpis a:hover {
+    background-color: #fcfcfcc4;
+    color: #313131;
+    border-radius: 2em;
+}
+
+.head-nadpis span {
+    color: #bbcf00;
+}
+
+.head-nadpis a:hover span {
+    color: #606e11;
+}
+
+.head-tymy {
+    top: -9em;
+    color: #5552ff;
+}
+
+
+.head-tymy {
+    color: #c7c7c7;
+}
+
+.head-tymy a {
+    text-decoration: none;
+    transition: all ease .3s;
+    padding: .5em .2em;
+}
+
+.head-tymy a:nth-child(1) {
+    color: #ff0000;
+}
+
+.head-tymy a:nth-child(2) {
+    color: #5462e0;
+}
+
+.head-tymy a:hover {
+    background-color: #c7c7c7;
+    border-radius: 2em;
 }
 
 /* main >> detaily */
@@ -187,15 +274,15 @@ header {
 .det-info a {
     color: #9c0000;
     border-bottom: #0a008f solid .15em;
-    padding-bottom: .01em;
+    padding: .1em;
     text-decoration: none;
-    transition: all ease .2s;
+    transition: all ease .3s;
 }
 
 .det-info a:hover,
 .det-info a:focus {
     color: #000;
-    border-bottom: none;
+    background-color: #919191;
 }
 
 /* main >> statistiky */
@@ -208,6 +295,18 @@ header {
     width: 100%;
     border: #000 solid .2em;
     padding: 1em;
+}
+
+.st-tab a {
+    padding: .3em .5em;
+    text-decoration: none;
+    color: #000;
+    transition: all ease .3s;
+}
+
+.st-tab a:hover {
+    background-color: #888888;
+    border-bottom: #0a008f solid .3em;
 }
 
 .st-tab tr {
@@ -319,7 +418,7 @@ header {
     padding: .5em .8em;
     color: #000;
     border-bottom: #0a008f solid .2em;
-    transition: all ease .2s;
+    transition: all ease .3s;
 }
 
 .ces-souper a:hover {
@@ -345,10 +444,14 @@ header {
     color: #000;
     border-top: #0a008f solid .02em;
     border-bottom: #0a008f solid .02em;
-    transition: all ease .2s;
+    transition: all ease .3s;
 }
 
 .ces-zapas-kon a:hover {
     background-color: #a7a7a7;
 }
 
+/* Zápas */
+#zapas {
+    padding-top: 5em;
+}
