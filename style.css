@@ -44,8 +44,10 @@ header {
     transition: .3s ease;
 }
 
-.logo a:hover {
+.logo a:hover, 
+.logo a:focus {
     color: #68ffff;
+    outline: none;
 }
 
 .logo a span {
@@ -75,8 +77,10 @@ header {
     transition: all .3s ease;
 }
 
-.nav-item a:hover {
+.nav-item a:hover,
+.nav-item a:focus {
     color: #e6e6e6;
+    outline: none;
 }
 
 #ddm-cesta {
@@ -103,10 +107,12 @@ header {
     transition: all 0.3s ease 0s, visibility 0s ease;
 }
 
-.nav-drop:hover .drop-down-menu {
+.nav-drop:hover .drop-down-menu,
+.nav-drop:focus .drop-down-menu {
     visibility: visible;
     transform: translateY(0%);
     opacity: 1;
+    outline: none;
 }
 
 .down-nav-head {
@@ -131,13 +137,14 @@ header {
     color: #9b9b9b;
 }
 
-.down-nav-item a:hover span {
+.down-nav-item a:hover span,
+.down-nav-item a:focus span {
     color: #f0f0f0;
+    outline: none;
 }
 
 /* main */
 .main {
-    width: 60vw;
     margin: auto;
 }
 
@@ -152,7 +159,9 @@ header {
 
 /* main > header */
 .main-header {
+    margin: auto;
     margin-top: 6em;
+    width: 60vw;
     height: 60vh;
 }
 
@@ -190,18 +199,22 @@ header {
     transition: all ease .3s;
 }
 
-.head-nadpis a:hover {
+.head-nadpis a:hover,
+.head-nadpis a:focus {
     background-color: #fcfcfcc4;
     color: #313131;
     border-radius: 2em;
+    outline: none;
 }
 
 .head-nadpis span {
     color: #bbcf00;
 }
 
-.head-nadpis a:hover span {
+.head-nadpis a:hover span,
+.head-nadpis a:focus span {
     color: #606e11;
+    outline: none;
 }
 
 .head-tymy {
@@ -228,15 +241,19 @@ header {
     color: #5462e0;
 }
 
-.head-tymy a:hover {
+.head-tymy a:hover,
+.head-tymy a:focus {
     background-color: #c7c7c7;
     border-radius: 2em;
+    outline: none;
 }
 
 /* main >> detaily */
 .m-i-flex {
+    width: 60vw;
     display: flex;
     justify-content: space-around;
+    margin: 2em auto;
 }
 
 #detaily {
@@ -283,6 +300,7 @@ header {
 .det-info a:focus {
     color: #000;
     background-color: #919191;
+    outline: none;
 }
 
 /* main >> statistiky */
@@ -304,9 +322,11 @@ header {
     transition: all ease .3s;
 }
 
-.st-tab a:hover {
+.st-tab a:hover,
+.st-tab a:focus {
     background-color: #888888;
     border-bottom: #0a008f solid .3em;
+    outline: none;
 }
 
 .st-tab tr {
@@ -336,10 +356,15 @@ header {
 
 /* main >> cesta do finále */
 #cesta {
+    background-color: #a3a3a3;
     padding-top: 5em;
+    margin-top: .1em;
+    padding-bottom: 1em;
 }
 
 #kvalifikace, #skupina, #vyrazovaci {
+    width: 70vw;
+    margin: auto;
     padding-top: 5em;
 }
 
@@ -369,10 +394,12 @@ header {
     transition: all ease .3s;
 }
 
-.ces-team-head a:hover {
+.ces-team-head a:hover,
+.ces-team-head a:focus {
     color: #181818;
-    background-color: #a7a7a7;
+    background-color: #c9c9c9;
     border-bottom: #0a008f solid .2em;
+    outline: none;
 }
 
 .ces-teams-con {
@@ -388,12 +415,63 @@ header {
     flex: 1;
 }
 
+.sku-tabulka {
+    margin: 5em 2em;
+    width: 100%;
+}
+
+.sku-tabulka tr {
+    background-color: #b4b4b4;
+}
+
+.sku-tabulka tr:nth-child(1) {
+    background-color: #ff0f0f;
+}
+
+.sku-tabulka tr:nth-child(2) {
+    background-color: #2fa500;
+}
+
+.sku-tabulka tr:hover,
+.sku-tabulka tr:focus {
+    background-color: #ac8c00;
+    outline: none;
+}
+
+.sku-tabulka th {
+    height: 3em;
+    padding: .6em;
+}
+
+.sku-tabulka td {
+    height: 2em;
+    padding: 1em;
+    text-align: center;
+}
+
+.sku-tabulka a {
+    text-decoration: none;
+    color: #232323;
+    font-weight: 700;
+    padding: .4em;
+    transition: all ease .3s;
+}
+
+.sku-tabulka a:hover,
+.sku-tabulka a:focus {
+    background-color: #ececec;
+    border-radius: 1em;
+    outline: none;
+}
+
 .ces-popis-con {
+    height: 2em;
     text-align: center;
     font-weight: 700;
     align-self: center;
     font-size: 1.2rem;
-    margin: 1.5em auto;
+    margin: 1.3em auto;
+    height: 2em;
 }
 
 .ces-zapasy {
@@ -405,6 +483,7 @@ header {
     width: 100%;
     display: flex;
     margin: 2em auto;
+    height: 2em;
 }
 
 .ces-souper {
@@ -421,8 +500,12 @@ header {
     transition: all ease .3s;
 }
 
-.ces-souper a:hover {
-    background-color: #a7a7a7;
+.ces-souper a:hover,
+.ces-souper a:focus {
+    background-color: #c9c9c9;
+    border-radius: 1em;
+    border: #0a008f solid .02em;
+    outline: none;
 }
 
 .ces-mul-zapas {
@@ -442,13 +525,16 @@ header {
     text-decoration: none;
     padding: .5em .8em;
     color: #000;
-    border-top: #0a008f solid .02em;
-    border-bottom: #0a008f solid .02em;
+    border: #0a008f solid .02em;
     transition: all ease .3s;
+    border-radius: .4em;
 }
 
-.ces-zapas-kon a:hover {
-    background-color: #a7a7a7;
+.ces-zapas-kon a:hover,
+.ces-zapas-kon a:focus {
+    background-color: #c9c9c9;
+    border-radius: 0;
+    outline: none;
 }
 
 /* Zápas */
